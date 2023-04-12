@@ -5,6 +5,6 @@ on:
 
 jobs:
   job1:
-    uses: joshjohanning-org/nested-reusable-workflows/.github/workflows/nested1.yml
+    uses: joshjohanning-org/nested-reusable-workflows/.github/workflows/nested1.yml@main
 
   
