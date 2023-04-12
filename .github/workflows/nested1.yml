@@ -1,4 +1,4 @@
-name: Reusable workflow
+name: nested 1
 
 on:
   workflow_call:
