@@ -6,7 +6,7 @@ on:
 jobs:
   call-another-reusable:
     uses: joshjohanning-org/nested-reusable-workflows/.github/workflows/nested2.yml@main
-    example_job2:
+  example_job2:
     name: Generate output
     runs-on: ubuntu-latest
     steps:
