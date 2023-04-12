@@ -1,0 +1,10 @@
+name: nested reusable workflows
+
+on:
+  workflow_dispatch:
+
+jobs:
+  job1:
+    uses: joshjohanning-org/nested-reusable-workflows/.github/workflows/nested1.yml
+
+  
