@@ -8,7 +8,7 @@ jobs:
     uses: joshjohanning-org/nested-reusable-workflows/.github/workflows/nested3.yml@main
   example_job:
     name: Generate output
-    runs-on: ubuntu-latest
+    runs-on: arc-runner-set
     steps:
       - id: step1
         run: echo "test"
