@@ -7,8 +7,8 @@ jobs:
   call-another-reusable:
     uses: joshjohanning-org/nested-reusable-workflows/.github/workflows/nested3.yml@main
   example_job:
-    name: Generate output
-    runs-on: arc-runner-set
+    name: Generate output - diff
+    runs-on: ubuntu-latest
     steps:
       - id: step1
         run: echo "test"
