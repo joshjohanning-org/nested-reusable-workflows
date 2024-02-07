@@ -10,32 +10,3 @@ on:
 jobs:
   call-another-reusable:
     uses: joshjohanning-org/nested-reusable-workflows/.github/workflows/nested2.yml@main
-  example_job2:
-    name: Generate output
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        version: [10, 12, 14]
-    steps:
-      - id: step1
-        run: echo "test"
-      - run: echo "${{ inputs.python-version }}"
-
-  example_job3:
-    needs: example_job2
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        version: [10, 12, 14]
-    steps:
-      - run: echo "hi"
-    
-  example_job4:
-    needs: example_job3
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        version: [10, 12, 14]
-    steps:
-      - run: echo "hi"
-    
