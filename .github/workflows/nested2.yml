@@ -7,7 +7,7 @@ jobs:
   call-another-reusable:
     uses: joshjohanning-org/nested-reusable-workflows/.github/workflows/nested3.yml@main
   example_job:
-    name: Generate output - diff
+    name: out-2
     runs-on: ubuntu-latest
     steps:
       - id: step1
