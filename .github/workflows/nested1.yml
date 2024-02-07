@@ -24,12 +24,18 @@ jobs:
   example_job3:
     needs: example_job2
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        version: [10, 12, 14]
     steps:
       - run: echo "hi"
     
   example_job4:
     needs: example_job3
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        version: [10, 12, 14]
     steps:
       - run: echo "hi"
     
