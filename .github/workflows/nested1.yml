@@ -8,7 +8,7 @@ on:
         type: string
 
 jobs:
-  call-another-reusable:
+  call:
     strategy:
       matrix:
         target: [dev, stage, prod]
