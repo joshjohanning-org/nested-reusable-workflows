@@ -5,7 +5,7 @@ on:
 
 jobs:
   example_job:
-    name: Generate output
+    name: out
     runs-on: ubuntu-latest
     steps:
       - id: step1
