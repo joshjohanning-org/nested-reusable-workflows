@@ -6,7 +6,7 @@ on:
 jobs:
   example_job:
     name: Generate output
-    runs-on: arc-runner-set
+    runs-on: ubuntu-latest
     steps:
       - id: step1
         run: echo "test"
