@@ -27,3 +27,9 @@ jobs:
     steps:
       - run: echo "hi"
     
+  example_job4:
+    needs: example_job3
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hi"
+    
