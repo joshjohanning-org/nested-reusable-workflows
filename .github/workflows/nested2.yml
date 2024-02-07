@@ -9,9 +9,6 @@ jobs:
   example_job:
     name: Generate output - diff
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        version: [10, 12, 14]
     steps:
       - id: step1
         run: echo "test"
