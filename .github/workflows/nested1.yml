@@ -9,4 +9,7 @@ on:
 
 jobs:
   call-another-reusable:
+    strategy:
+      matrix:
+        target: [dev, stage, prod]
     uses: joshjohanning-org/nested-reusable-workflows/.github/workflows/nested2.yml@main
