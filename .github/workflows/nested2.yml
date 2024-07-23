@@ -5,7 +5,7 @@ on:
 
 jobs:
   call-another-reusable:
-    uses: joshjohanning-org/nested-reusable-workflows/.github/workflows/nested3.yml@main
+    uses: ./.github/workflows/nested3.yml
   example_job:
     name: out-2
     runs-on: ubuntu-latest
