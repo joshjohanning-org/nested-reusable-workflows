@@ -12,4 +12,4 @@ jobs:
     strategy:
       matrix:
         target: [dev, stage, prod]
-    uses: joshjohanning-org/nested-reusable-workflows/.github/workflows/nested2.yml@main
+    uses: ./.github/workflows/nested2.yml
