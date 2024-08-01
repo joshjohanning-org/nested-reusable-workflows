@@ -12,3 +12,4 @@ jobs:
     steps:
       - id: step1
         run: echo "test"
+      - run: echo ${{ env.other-var }}
