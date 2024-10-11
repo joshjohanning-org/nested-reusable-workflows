@@ -14,3 +14,9 @@ jobs:
       matrix:
         target: [dev, stage, prod]
     uses: ./.github/workflows/nested2.yml
+
+    two:
+      runs-on: ubuntu-latest
+      steps:
+        - run: echo "hi ${{ inputs.python-version }}"
+        
